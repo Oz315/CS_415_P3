@@ -2,6 +2,7 @@
 #include <fstream>
 #include <cctype>
 #include "ArrayTrie.h"
+#include "TernaryTree.h"
 using namespace std;
 
 int main(int argc, char* argv[]) {
@@ -26,6 +27,7 @@ int main(int argc, char* argv[]) {
     string cleansedWord;
     if (flag == "1") {
         ArrayTrie* trie = new ArrayTrie();
+        TernaryTree* BST_trie = new TernaryTree();
         while (input >> word) {
             for (char c : word) {
                 if (isalpha(c)) {
@@ -35,6 +37,7 @@ int main(int argc, char* argv[]) {
 
             }
             trie->insert(cleansedWord);
+            BST_trie->insert(cleansedWord);
             cleansedWord = "";
         }
         input.close();
@@ -58,7 +61,6 @@ int main(int argc, char* argv[]) {
 
            //Search for the prefix and get the matching words
            trie->autoComplete(words, userInput, searchOperations, totalOperations);
-
            //Print how many operations the search took
            cout << "Time taken to search in the standard Trie is "
                 << searchOperations << " operations" << endl;
@@ -82,6 +84,7 @@ int main(int argc, char* argv[]) {
             cin >> userInput;
         }
         delete trie;
+        delete BST_trie;
     }
     else if (flag == "2") {
         cout << "Not yet implemented..." << endl;

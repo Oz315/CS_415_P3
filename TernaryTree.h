@@ -30,6 +30,8 @@ private:
     // Difficult to imagine but the important thing to note is words on a Ternary Trie will
     // be in the middle, once we go left or right, it becomes a different word which is why
     // we add the letter before going into middle and then remove it when we go right
+    // So the recursive calling order doesn't matter, I just had it go left, middle, right
+    // because then it at least saves the words in alphabetical order
     void autoCompleteHelper(const TernNode* node, std::vector<std::string>& words, std::string& word) const {
         if (node == nullptr) {
             return;
