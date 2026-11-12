@@ -4,4 +4,5 @@ project(CS_415_Project_3)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(CS_415_Project_3 main.cpp
-        ArrayTrie.h)
+        ArrayTrie.h
+        TernaryTree.h)
