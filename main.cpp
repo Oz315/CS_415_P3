@@ -52,7 +52,7 @@ int main(int argc, char* argv[]) {
         string userInput;
         vector<string> words;
 
-        cout << "Enter search string: ";
+        cout << "Enter search string:";
         cin >> userInput;
         while (userInput != "0") { // user shouldn't be inputting numbers anyway
            //Keep track of the search and auto-complete operations
@@ -68,18 +68,30 @@ int main(int argc, char* argv[]) {
            //Print the words that match prefix
            cout << "Auto-complete results using standard Trie are: ";
            for (int i = 0; i < words.size(); i++) {
-            if (i > 0) {
-                cout << ", ";
-            }
-            cout << words[i];
+               if (i > 0) {
+                   cout << ", ";
+               }
+               cout << words[i];
            }
            cout << endl;
 
            //Print the total operations for auto-complete
            cout << "Time taken to find auto-complete results in the standard Trie is "
-                << totalOperations << " operations" << endl;
+            << totalOperations << " operations" << endl;
             words.clear();
 
+            // Now do the same with Ternary Trie
+            cout << endl;
+            BST_trie->autoComplete(words, userInput);
+            cout << "Auto-complete results using BST based Trie are: ";
+            for (int i = 0; i < words.size(); i++) {
+                if (i > 0) {
+                    cout << ", ";
+                }
+                cout << words[i];
+            }
+            cout << endl;
+            words.clear();
             cout << "\n\n(To quit type '0') Enter search string: ";
             cin >> userInput;
         }

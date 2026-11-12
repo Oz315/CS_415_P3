@@ -55,31 +55,39 @@ public:
     }
     // presuming word has already been cleansed (all lower case and no symbols)
     void insert(const std::string& word) {
+        int i = 0;
         if (root == nullptr) {
             root = new TernNode();
-            root->letter = word[0];
+            root->letter = word[i];
         }
         TernNode* temp = root;
-        for (char c : word) {
-            if (c == temp->letter) { // if letter already exists here, progress down
+        while (i < word.size()) { // for each word[i] to temp-> letter comparison count it as one operation
+            if (word[i] == temp->letter) { // if letter already exists here, progress down
+                // because of indices, make sure we aren't out of bounds
+                if (i + 1 >= word.size()) { // don't count as operation
+                    break;
+                }
                 if (temp->middle == nullptr) {
                     temp->middle = new TernNode(); // make sure it exists first
+                    temp->middle->letter = word[i + 1]; // the current letter is where we are at, so insert the NEXT letter
                 }
                 temp = temp->middle;
+                i++; //Only want to move to next letter if we actually inserted it
             }
-            else if (c < temp->letter) { // move left if less than
+            else if (word[i] < temp->letter) { // move left if less than
                 if (temp->left == nullptr) {
                     temp->left = new TernNode();
+                    temp->left->letter = word[i]; // Should really make a better constructor later
                 }
                 temp = temp->left;
             }
             else { // only right is left
                 if (temp->right == nullptr) {
                     temp->right = new TernNode();
+                    temp->right->letter = word[i];
                 }
                 temp = temp->right;
             }
-            temp->letter = c; // if not already
         }
         temp->end_of_word = true;
     }
@@ -87,14 +95,19 @@ public:
 
     [[nodiscard]] TernNode* search(const std::string& word) const {
         TernNode* temp = root;
-        for (char c : word) {
+        int i = 0;
+        while (i < word.size()) {
             if (!temp) {
                 return nullptr;
             }
-            if (c == temp->letter) {
+            if (word[i] == temp->letter) {
+                if (i + 1 >= word.size()) { // otherwise it accidentally increments to some nullptr
+                    return temp;
+                }
                 temp = temp->middle;
+                i++;
             }
-            else if (c < temp->letter) {
+            else if (word[i] < temp->letter) {
                 temp = temp->left;
             }
             else {
