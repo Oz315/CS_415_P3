@@ -8,6 +8,7 @@ using namespace std;
 int main(int argc, char* argv[]) {
     if (argc != 3) {
         cerr << "Usage: " << argv[0] << " <input_file> <case_1_or_2>" << endl;
+        return 1;
     }
 
     string flag = argv[2];
