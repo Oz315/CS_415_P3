@@ -25,9 +25,9 @@ int main(int argc, char* argv[]) {
 
     string word;
     string cleansedWord;
+    ArrayTrie* trie = new ArrayTrie();
+    TernaryTree* BST_trie = new TernaryTree();
     if (flag == "1") {
-        ArrayTrie* trie = new ArrayTrie();
-        TernaryTree* BST_trie = new TernaryTree();
         while (input >> word) {
             for (char c : word) {
                 if (isalpha(c)) {
@@ -49,9 +49,16 @@ int main(int argc, char* argv[]) {
              << trie->getSpace()
              << " pointer units" << endl;
 
+        cout << "Time taken to build the BST based Trie is "
+             << BST_trie->getBuildOperations()
+             << " operations and space occupied by it is "
+             << BST_trie->getSpace()
+             << " pointer units" << endl;
+
         string userInput;
         vector<string> words;
 
+        cout << endl;
         cout << "Enter search string:";
         cin >> userInput;
         while (userInput != "0") { // user shouldn't be inputting numbers anyway
@@ -77,30 +84,35 @@ int main(int argc, char* argv[]) {
 
            //Print the total operations for auto-complete
            cout << "Time taken to find auto-complete results in the standard Trie is "
-            << totalOperations << " operations" << endl;
-            words.clear();
+           << totalOperations << " operations" << endl;
+           words.clear();
 
-            // Now do the same with Ternary Trie
-            cout << endl;
-            BST_trie->autoComplete(words, userInput);
-            cout << "Auto-complete results using BST based Trie are: ";
-            for (int i = 0; i < words.size(); i++) {
-                if (i > 0) {
-                    cout << ", ";
-                }
-                cout << words[i];
-            }
-            cout << endl;
-            words.clear();
-            cout << "\n\n(To quit type '0') Enter search string: ";
-            cin >> userInput;
+
+           // Now do the same with Ternary Trie
+           searchOperations = 0;
+           totalOperations = 0;
+           cout << endl;
+           BST_trie->autoComplete(words, userInput, searchOperations, totalOperations);
+           cout << "Time taken to search in the BST based Trie is " << searchOperations << " operations" << endl;
+           cout << "Auto-complete results using BST based Trie are: ";
+           for (int i = 0; i < words.size(); i++) {
+               if (i > 0) {
+                   cout << ", ";
+               }
+              cout << words[i];
+           }
+           cout << endl;
+           cout << "Time taken to find auto-complete results in the BST based Trie is " << totalOperations << " operations" << endl;
+           words.clear();
+           cout << "\n\n(To quit type '0') Enter search string: ";
+           cin >> userInput;
         }
-        delete trie;
-        delete BST_trie;
     }
     else if (flag == "2") {
         cout << "Not yet implemented..." << endl;
     }
+    delete trie;
+    delete BST_trie;
     cout << "Done!" << endl;
     return 0;
 }

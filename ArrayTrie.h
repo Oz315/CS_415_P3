@@ -125,10 +125,10 @@ public:
     // I am not doing delete, we aren't using it here
     // But I am doing an auto-complete function
     void autoComplete(std::vector<std::string>& words, std::string& word,
-    long long& searhOperations, long long& totalOperations) const {
+    long long& searchOperations, long long& totalOperations) const {
         words.clear();
-        TrieNode* temp = search(word, searhOperations);
-        totalOperations = searhOperations;
+        TrieNode* temp = search(word, searchOperations);
+        totalOperations = searchOperations;
         autoCompleteHelper(temp, words, word, totalOperations);
     }
 
