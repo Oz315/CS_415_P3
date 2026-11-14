@@ -146,6 +146,19 @@ public:
         return temp;
     }
 
+//Check if the whole word exists in Trie
+    bool containsWord(const std::string& word, long long& searchOperations) const{
+        TernNode* temp = search(word, searchOperations);
+
+        if (temp == nullptr) {
+            return false;
+        }
+
+        //Count checking the end of the word
+        searchOperations++;
+        return temp->end_of_word;
+    }
+
     void autoComplete(std::vector<std::string>& words, std::string& word, long long& searchOperations, long long& totalOperations) const {
         TernNode* temp = search(word, searchOperations);
         totalOperations = searchOperations;

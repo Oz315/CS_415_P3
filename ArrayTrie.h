@@ -122,6 +122,20 @@ public:
         }
         return temp; // Note this returns regardless if its an end-of-word, because it needs to for auto-complete to work
     }
+
+    //Check if the whole word exists in Trie
+    bool containsWord(const std::string& word, long long& searchOperations) const{
+        TrieNode* temp = search(word, searchOperations);
+
+        if (temp == nullptr) {
+            return false;
+        }
+
+        //Count checking the end of the word
+        searchOperations++;
+        return temp->end_of_word;
+    }
+
     // I am not doing delete, we aren't using it here
     // But I am doing an auto-complete function
     void autoComplete(std::vector<std::string>& words, std::string& word,
