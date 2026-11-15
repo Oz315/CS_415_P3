@@ -104,8 +104,11 @@ int main(int argc, char* argv[]) {
            }
            cout << endl;
            cout << "Time taken to find auto-complete results in the BST based Trie is " << totalOperations << " operations" << endl;
+
+           cout << words.size() << " number of results in autocomplete." << endl;
+
            words.clear();
-           cout << "\n\n(To quit type '0') Enter search string: ";
+           cout << "\n(To quit type '0') Enter search string: ";
            cin >> userInput;
         }
     }
@@ -177,7 +180,9 @@ int main(int argc, char* argv[]) {
  
         //Print how many words were searched 
         cout << endl;
+
         cout << "Total words searched: " << allWords.size() << endl;
+
 
         //Print the results for the standard Trie
         cout << "Words found in standard Trie: "
@@ -185,7 +190,8 @@ int main(int argc, char* argv[]) {
 
         cout << "Time taken to search all strings in the standard Trie is "
              << standardSearchOperations << " operations" << endl;
-        
+
+
         //Print the results for the BST based Trie
         cout << "Words found in BST based Trie: "
              << BSTFound << endl;
@@ -196,6 +202,5 @@ int main(int argc, char* argv[]) {
 
     delete trie;
     delete BST_trie;
-    cout << "Done!" << endl;
     return 0;
 }
