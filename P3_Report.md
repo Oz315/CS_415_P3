@@ -81,201 +81,201 @@ Overall, the standard Trie favors faster direct searching at the cost of much mo
 
 5. Appendix: In this section, include the output of your program (copy-paste or screenshots) to support your answers in previous sections.
 
-Case 1:
-sgarcia@blue:~/cs415/CS_415_P3$ ./main tale-1.txt 1
-Time taken to build the standard Trie is 9410 operations and space occupied by it is 49374 pointer units
-Time taken to build the BST based Trie is 32705 operations and space occupied by it is 5697 pointer units
+Case 1: <br>
+sgarcia@blue:~/cs415/CS_415_P3$ ./main tale-1.txt 1 <br>
+Time taken to build the standard Trie is 9410 operations and space occupied by it is 49374 pointer units <br>
+Time taken to build the BST based Trie is 32705 operations and space occupied by it is 5697 pointer units <br>
 
-Enter search string:re
-Time taken to search in the standard Trie is 2 operations
-Auto-complete results using standard Trie are: received, recently, recognised, relate, removing, requisition, restalong, retinue, revelations, revolution
-Time taken to find auto-complete results in the standard Trie is 1757 operations
+Enter search string:re <br>
+Time taken to search in the standard Trie is 2 operations <br>
+Auto-complete results using standard Trie are: received, recently, recognised, relate, removing, requisition, restalong, retinue, revelations, revolution <br>
+Time taken to find auto-complete results in the standard Trie is 1757 operations <br>
 
-Time taken to search in the BST based Trie is 20 operations
-Auto-complete results using BST based Trie are: received, recently, recognised, relate, removing, requisition, restalong, retinue, revelations, revolution
-Time taken to find auto-complete results in the BST based Trie is 277 operations
-
-
-(To quit type '0') Enter search string: fr
-Time taken to search in the standard Trie is 2 operations
-Auto-complete results using standard Trie are: framework, france, from
-Time taken to find auto-complete results in the standard Trie is 353 operations
-
-Time taken to search in the BST based Trie is 13 operations
-Auto-complete results using BST based Trie are: framework, france, from
-Time taken to find auto-complete results in the BST based Trie is 62 operations
+Time taken to search in the BST based Trie is 20 operations <br>
+Auto-complete results using BST based Trie are: received, recently, recognised, relate, removing, requisition, restalong, retinue, revelations, revolution <br>
+Time taken to find auto-complete results in the BST based Trie is 277 operations <br>
 
 
-(To quit type '0') Enter search string: z
-Time taken to search in the standard Trie is 1 operations
-Auto-complete results using standard Trie are: 
-Time taken to find auto-complete results in the standard Trie is 1 operations
+(To quit type '0') Enter search string: fr <br>
+Time taken to search in the standard Trie is 2 operations <br>
+Auto-complete results using standard Trie are: framework, france, from <br>
+Time taken to find auto-complete results in the standard Trie is 353 operations <br>
 
-Time taken to search in the BST based Trie is 12 operations
-Auto-complete results using BST based Trie are: 
-Time taken to find auto-complete results in the BST based Trie is 12 operations
-
-
-(To quit type '0') Enter search string: s
-Time taken to search in the standard Trie is 1 operations
-Auto-complete results using standard Trie are: sack, saturday, sawn, scarcely, search, season, security, sentencing, set, settled, seven, seventyfive, she, sheltered, shield, short, shot, sight, silently, sister, sixpence, sixty, small, smoothness, snipped, snuffed, so, some, southcott, spending, spirits, spiritual, spring, st, stand, state, stir, stopped, strange, stringing, subjects, sublime, such, sufferer, superlative, supernaturally, suspicion, swallowing
-Time taken to find auto-complete results in the standard Trie is 5995 operations
-
-Time taken to search in the BST based Trie is 14 operations
-Auto-complete results using BST based Trie are: sack, saturday, sawn, scarcely, search, season, security, sentencing, set, settled, seven, seventyfive, she, sheltered, shield, short, shot, sight, silently, sister, sixpence, sixty, small, smoothness, snipped, snuffed, so, some, southcott, spending, spirits, spiritual, spring, st, stand, state, stir, stopped, strange, stringing, subjects, sublime, such, sufferer, superlative, supernaturally, suspicion, swallowing
-Time taken to find auto-complete results in the BST based Trie is 899 operations
+Time taken to search in the BST based Trie is 13 operations <br>
+Auto-complete results using BST based Trie are: framework, france, from <br>
+Time taken to find auto-complete results in the BST based Trie is 62 operations <br>
 
 
-(To quit type '0') Enter search string: ba
-Time taken to search in the standard Trie is 2 operations
-Auto-complete results using standard Trie are: ball, battles
-Time taken to find auto-complete results in the standard Trie is 218 operations
+(To quit type '0') Enter search string: z <br>
+Time taken to search in the standard Trie is 1 operations <br>
+Auto-complete results using standard Trie are: <br>
+Time taken to find auto-complete results in the standard Trie is 1 operations <br>
 
-Time taken to search in the BST based Trie is 9 operations
-Auto-complete results using BST based Trie are: ball, battles
-Time taken to find auto-complete results in the BST based Trie is 38 operations
-
-
-(To quit type '0') Enter search string: ever
-Time taken to search in the standard Trie is 4 operations
-Auto-complete results using standard Trie are: ever, every, everything
-Time taken to find auto-complete results in the standard Trie is 193 operations
-
-Time taken to search in the BST based Trie is 17 operations
-Auto-complete results using BST based Trie are: ever, every, everything
-Time taken to find auto-complete results in the BST based Trie is 42 operations
+Time taken to search in the BST based Trie is 12 operations <br>
+Auto-complete results using BST based Trie are: <br>
+Time taken to find auto-complete results in the BST based Trie is 12 operations <br>
 
 
-(To quit type '0') Enter search string: 0
-Done!
+(To quit type '0') Enter search string: s <br>
+Time taken to search in the standard Trie is 1 operations <br>
+Auto-complete results using standard Trie are: sack, saturday, sawn, scarcely, search, season, security, sentencing, set, settled, seven, seventyfive, she, sheltered, shield, short, shot, sight, silently, sister, <br> sixpence, sixty, small, smoothness, snipped, snuffed, so, some, southcott, spending, spirits, spiritual, spring, st, stand, state, stir, stopped, strange, stringing, subjects, sublime, such, sufferer, superlative, <br> supernaturally, suspicion, swallowing <br>
+Time taken to find auto-complete results in the standard Trie is 5995 operations <br>
 
-sgarcia@blue:~/cs415/CS_415_P3$ ./main test.txt 1
-Time taken to build the standard Trie is 283 operations and space occupied by it is 1872 pointer units
-Time taken to build the BST based Trie is 643 operations and space occupied by it is 216 pointer units
-
-Enter search string:0
-Done!
-
-sgarcia@blue:~/cs415/CS_415_P3$ ./main test2.txt 1
-Time taken to build the standard Trie is 759 operations and space occupied by it is 4628 pointer units
-Time taken to build the BST based Trie is 2012 operations and space occupied by it is 534 pointer units
-
-Enter search string:0
-Done!
+Time taken to search in the BST based Trie is 14 operations <br>
+Auto-complete results using BST based Trie are: sack, saturday, sawn, scarcely, search, season, security, sentencing, set, settled, seven, seventyfive, she, sheltered, shield, short, shot, sight, silently, sister, <br> sixpence, sixty, small, smoothness, snipped, snuffed, so, some, southcott, spending, spirits, spiritual, spring, st, stand, state, stir, stopped, strange, stringing, subjects, sublime, such, sufferer, superlative, <br> supernaturally, suspicion, swallowing <br>
+Time taken to find auto-complete results in the BST based Trie is 899 operations <br>
 
 
-sgarcia@blue:~/cs415/CS_415_P3$ ./main words_alpha.txt 1
-Time taken to build the standard Trie is 5920416 operations and space occupied by it is 26723034 pointer units
-Time taken to build the BST based Trie is 74113215 operations and space occupied by it is 3083427 pointer units
+(To quit type '0') Enter search string: ba <br>
+Time taken to search in the standard Trie is 2 operations <br>
+Auto-complete results using standard Trie are: ball, battles <br>
+Time taken to find auto-complete results in the standard Trie is 218 operations <br>
 
-Enter search string:abac
-Time taken to search in the standard Trie is 4 operations
-Auto-complete results using standard Trie are: abac, abaca, abacas, abacate, abacaxi, abacay, abaci, abacinate, abacination, abacisci, abaciscus, abacist, aback, abacli, abacot, abacterial, abactinal, abactinally, abaction, abactor, abaculi, abaculus, abacus, abacuses
-Time taken to find auto-complete results in the standard Trie is 1381 operations
+Time taken to search in the BST based Trie is 9 operations <br>
+Auto-complete results using BST based Trie are: ball, battles <br>
+Time taken to find auto-complete results in the BST based Trie is 38 operations <br>
 
-Time taken to search in the BST based Trie is 13 operations
-Auto-complete results using BST based Trie are: abac, abaca, abacas, abacate, abacaxi, abacay, abaci, abacinate, abacination, abacisci, abaciscus, abacist, aback, abacli, abacot, abacterial, abactinal, abactinally, abaction, abactor, abaculi, abaculus, abacus, abacuses
-Time taken to find auto-complete results in the BST based Trie is 214 operations
+(To quit type '0') Enter search string: ever <br>
+Time taken to search in the standard Trie is 4 operations <br>
+Auto-complete results using standard Trie are: ever, every, everything <br>
+Time taken to find auto-complete results in the standard Trie is 193 operations <br>
 
-
-(To quit type '0') Enter search string: miser
-Time taken to search in the standard Trie is 5 operations
-Auto-complete results using standard Trie are: miser, miserabilia, miserabilism, miserabilist, miserabilistic, miserability, miserable, miserableness, miserably, miseration, miserdom, misere, miserected, miserere, misereres, miserhood, misericord, misericorde, misericordia, miseries, miserism, miserliness, miserly, misers, misery
-Time taken to find auto-complete results in the standard Trie is 1652 operations
-
-Time taken to search in the BST based Trie is 151 operations
-Auto-complete results using BST based Trie are: miser, miserabilia, miserabilism, miserabilist, miserabilistic, miserability, miserable, miserableness, miserably, miseration, miserdom, misere, miserected, miserere, misereres, miserhood, misericord, misericorde, misericordia, miseries, miserism, miserliness, miserly, misers, misery
-Time taken to find auto-complete results in the BST based Trie is 392 operations
+Time taken to search in the BST based Trie is 17 operations <br>
+Auto-complete results using BST based Trie are: ever, every, everything <br>
+Time taken to find auto-complete results in the BST based Trie is 42 operations <br>
 
 
-(To quit type '0') Enter search string: zz
-Time taken to search in the standard Trie is 2 operations
-Auto-complete results using standard Trie are: 
-Time taken to find auto-complete results in the standard Trie is 2 operations
+(To quit type '0') Enter search string: 0 <br>
+Done! <br>
 
-Time taken to search in the BST based Trie is 49 operations
-Auto-complete results using BST based Trie are: 
-Time taken to find auto-complete results in the BST based Trie is 49 operations
+sgarcia@blue:~/cs415/CS_415_P3$ ./main test.txt 1 <br>
+Time taken to build the standard Trie is 283 operations and space occupied by it is 1872 pointer units <br>
+Time taken to build the BST based Trie is 643 operations and space occupied by it is 216 pointer units <br>
 
+Enter search string:0 <br>
+Done! <br>
 
-(To quit type '0') Enter search string: s
-Time taken to build the standard Trie is 5920416 operations and space occupied by it is 26723034 pointer units
-Time taken to build the BST based Trie is 74113215 operations and space occupied by it is 3083427 pointer units
+sgarcia@blue:~/cs415/CS_415_P3$ ./main test2.txt 1 <br>
+Time taken to build the standard Trie is 759 operations and space occupied by it is 4628 pointer units <br>
+Time taken to build the BST based Trie is 2012 operations and space occupied by it is 534 pointer units <br>
 
-Enter search string:Time taken to search in the standard Trie is 1 operations
-Time taken to find auto-complete results in the standard Trie is 2838970 operations
-
-Time taken to search in the BST based Trie is 60 operations
-Time taken to find auto-complete results in the BST based Trie is 420645 operations
+Enter search string:0 <br>
+Done! <br>
 
 
-(To quit type '0') Enter search string: Done!
+sgarcia@blue:~/cs415/CS_415_P3$ ./main words_alpha.txt 1 <br>
+Time taken to build the standard Trie is 5920416 operations and space occupied by it is 26723034 pointer units <br>
+Time taken to build the BST based Trie is 74113215 operations and space occupied by it is 3083427 pointer units <br>
 
-(To quit type '0') Enter search string: xyr
-Time taken to search in the standard Trie is 3 operations
-Auto-complete results using standard Trie are: xyrichthys, xyrid, xyridaceae, xyridaceous, xyridales, xyris
-Time taken to find auto-complete results in the standard Trie is 570 operations
+Enter search string:abac <br>
+Time taken to search in the standard Trie is 4 operations <br>
+Auto-complete results using standard Trie are: abac, abaca, abacas, abacate, abacaxi, abacay, abaci, abacinate, abacination, abacisci, abaciscus, abacist, aback, abacli, abacot, abacterial, abactinal, abactinally, <br> abaction, abactor, abaculi, abaculus, abacus, abacuses <br>
+Time taken to find auto-complete results in the standard Trie is 1381 operations <br>
 
-Time taken to search in the BST based Trie is 98 operations
-Auto-complete results using BST based Trie are: xyrichthys, xyrid, xyridaceae, xyridaceous, xyridales, xyris
-Time taken to find auto-complete results in the BST based Trie is 179 operations
-
-
-(To quit type '0') Enter search string: please
-Time taken to search in the standard Trie is 6 operations
-Auto-complete results using standard Trie are: please, pleased, pleasedly, pleasedness, pleaseman, pleasemen, pleaser, pleasers, pleases
-Time taken to find auto-complete results in the standard Trie is 438 operations
-
-Time taken to search in the BST based Trie is 106 operations
-Auto-complete results using BST based Trie are: please, pleased, pleasedly, pleasedness, pleaseman, pleasemen, pleaser, pleasers, pleases
-Time taken to find auto-complete results in the BST based Trie is 167 operations
+Time taken to search in the BST based Trie is 13 operations <br>
+Auto-complete results using BST based Trie are: abac, abaca, abacas, abacate, abacaxi, abacay, abaci, abacinate, abacination, abacisci, abaciscus, abacist, aback, abacli, abacot, abacterial, abactinal, abactinally, <br> abaction, abactor, abaculi, abaculus, abacus, abacuses <br>
+Time taken to find auto-complete results in the BST based Trie is 214 operations <br>
 
 
-(To quit type '0') Enter search string: 0
-Done!
+(To quit type '0') Enter search string: miser <br>
+Time taken to search in the standard Trie is 5 operations <br>
+Auto-complete results using standard Trie are: miser, miserabilia, miserabilism, miserabilist, miserabilistic, miserability, miserable, miserableness, miserably, miseration, miserdom, misere, miserected, miserere, <br> misereres, miserhood, misericord, misericorde, misericordia, miseries, miserism, miserliness, miserly, misers, misery <br>
+Time taken to find auto-complete results in the standard Trie is 1652 operations <br>
 
-Case 2:
+Time taken to search in the BST based Trie is 151 operations <br>
+Auto-complete results using BST based Trie are: miser, miserabilia, miserabilism, miserabilist, miserabilistic, miserability, miserable, miserableness, miserably, miseration, miserdom, misere, miserected, miserere, <br> misereres, miserhood, misericord, misericorde, misericordia, miseries, miserism, miserliness, miserly, misers, misery <br>
+Time taken to find auto-complete results in the BST based Trie is 392 operations <br>
 
-sgarcia@blue:~/cs415/CS_415_P3$ ./main test.txt 2
-Time taken to build the standard Trie is 283 operations and space occupied by it is 1872 pointer units
-Time taken to build the BST based Trie is 643 operations and space occupied by it is 216 pointer units
 
-Total words searched: 26
-Words found in standard Trie: 26
-Time taken to search all strings in the standard Trie is 139 operations
-Words found in BST based Trie: 26
-Time taken to search all strings in the BST based Trie is 372 operations
-Done!
+(To quit type '0') Enter search string: zz <br>
+Time taken to search in the standard Trie is 2 operations <br>
+Auto-complete results using standard Trie are: <br>
+Time taken to find auto-complete results in the standard Trie is 2 operations <br>
 
-sgarcia@blue:~/cs415/CS_415_P3$ ./main test2.txt 2
-Time taken to build the standard Trie is 759 operations and space occupied by it is 4628 pointer units
-Time taken to build the BST based Trie is 2012 operations and space occupied by it is 534 pointer units
+Time taken to search in the BST based Trie is 49 operations <br>
+Auto-complete results using BST based Trie are: <br>
+Time taken to find auto-complete results in the BST based Trie is 49 operations <br>
 
-Total words searched: 69
-Words found in standard Trie: 69
-Time taken to search all strings in the standard Trie is 403 operations
-Words found in BST based Trie: 69
-Time taken to search all strings in the BST based Trie is 1199 operations
-Done!
 
-sgarcia@blue:~/cs415/CS_415_P3$ ./main tale-1.txt 2
-Time taken to build the standard Trie is 9410 operations and space occupied by it is 49374 pointer units
-Time taken to build the BST based Trie is 32705 operations and space occupied by it is 5697 pointer units
+(To quit type '0') Enter search string: s <br>
+Time taken to build the standard Trie is 5920416 operations and space occupied by it is 26723034 pointer units <br>
+Time taken to build the BST based Trie is 74113215 operations and space occupied by it is 3083427 pointer units <br>
 
-Total words searched: 1002
-Words found in standard Trie: 1002
-Time taken to search all strings in the standard Trie is 5612 operations
-Words found in BST based Trie: 1002
-Time taken to search all strings in the BST based Trie is 20408 operations
-Done!
+Enter search string:Time taken to search in the standard Trie is 1 operations <br>
+Time taken to find auto-complete results in the standard Trie is 2838970 operations <br>
 
-sgarcia@blue:~/cs415/CS_415_P3$ ./main words_alpha.txt 2
-Time taken to build the standard Trie is 5920416 operations and space occupied by it is 26723034 pointer units
-Time taken to build the BST based Trie is 74113215 operations and space occupied by it is 3083427 pointer units
+Time taken to search in the BST based Trie is 60 operations <br>
+Time taken to find auto-complete results in the BST based Trie is 420645 operations <br>
 
-Total words searched: 370103
-Words found in standard Trie: 370103
-Time taken to search all strings in the standard Trie is 3864798 operations
-Words found in BST based Trie: 370103
-Time taken to search all strings in the BST based Trie is 52966212 operations
-Done!
+
+(To quit type '0') Enter search string: 0 <br>
+Done! <br>
+
+(To quit type '0') Enter search string: xyr <br>
+Time taken to search in the standard Trie is 3 operations <br>
+Auto-complete results using standard Trie are: xyrichthys, xyrid, xyridaceae, xyridaceous, xyridales, xyris <br>
+Time taken to find auto-complete results in the standard Trie is 570 operations <br>
+
+Time taken to search in the BST based Trie is 98 operations <br>
+Auto-complete results using BST based Trie are: xyrichthys, xyrid, xyridaceae, xyridaceous, xyridales, xyris <br>
+Time taken to find auto-complete results in the BST based Trie is 179 operations <br>
+
+
+(To quit type '0') Enter search string: please <br>
+Time taken to search in the standard Trie is 6 operations <br>
+Auto-complete results using standard Trie are: please, pleased, pleasedly, pleasedness, pleaseman, pleasemen, pleaser, pleasers, pleases <br>
+Time taken to find auto-complete results in the standard Trie is 438 operations <br>
+
+Time taken to search in the BST based Trie is 106 operations <br>
+Auto-complete results using BST based Trie are: please, pleased, pleasedly, pleasedness, pleaseman, pleasemen, pleaser, pleasers, pleases <br>
+Time taken to find auto-complete results in the BST based Trie is 167 operations <br>
+
+
+(To quit type '0') Enter search string: 0 <br>
+Done! <br>
+
+Case 2: <br>
+
+sgarcia@blue:~/cs415/CS_415_P3$ ./main test.txt 2 <br>
+Time taken to build the standard Trie is 283 operations and space occupied by it is 1872 pointer units <br>
+Time taken to build the BST based Trie is 643 operations and space occupied by it is 216 pointer units <br>
+
+Total words searched: 26 <br>
+Words found in standard Trie: 26 <br>
+Time taken to search all strings in the standard Trie is 139 operations <br>
+Words found in BST based Trie: 26 <br>
+Time taken to search all strings in the BST based Trie is 372 operations <br>
+Done! <br>
+
+sgarcia@blue:~/cs415/CS_415_P3$ ./main test2.txt 2 <br>
+Time taken to build the standard Trie is 759 operations and space occupied by it is 4628 pointer units <br>
+Time taken to build the BST based Trie is 2012 operations and space occupied by it is 534 pointer units <br>
+
+Total words searched: 69 <br>
+Words found in standard Trie: 69 <br>
+Time taken to search all strings in the standard Trie is 403 operations <br>
+Words found in BST based Trie: 69 <br>
+Time taken to search all strings in the BST based Trie is 1199 operations <br>
+Done! <br>
+
+sgarcia@blue:~/cs415/CS_415_P3$ ./main tale-1.txt 2 <br>
+Time taken to build the standard Trie is 9410 operations and space occupied by it is 49374 pointer units <br>
+Time taken to build the BST based Trie is 32705 operations and space occupied by it is 5697 pointer units <br>
+
+Total words searched: 1002 <br>
+Words found in standard Trie: 1002 <br>
+Time taken to search all strings in the standard Trie is 5612 operations <br>
+Words found in BST based Trie: 1002 <br>
+Time taken to search all strings in the BST based Trie is 20408 operations <br>
+Done! <br>
+
+sgarcia@blue:~/cs415/CS_415_P3$ ./main words_alpha.txt 2 <br>
+Time taken to build the standard Trie is 5920416 operations and space occupied by it is 26723034 pointer units <br>
+Time taken to build the BST based Trie is 74113215 operations and space occupied by it is 3083427 pointer units <br>
+
+Total words searched: 370103 <br>
+Words found in standard Trie: 370103 <br>
+Time taken to search all strings in the standard Trie is 3864798 operations <br>
+Words found in BST based Trie: 370103 <br>
+Time taken to search all strings in the BST based Trie is 52966212 operations <br>
+Done! <br>
