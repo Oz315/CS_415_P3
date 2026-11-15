@@ -2,12 +2,12 @@
 
 Include a summary of your results in the table below. In support of your answers, include screenshot of the output of your program in the appendix section (at the end of the report).
 
-| Input file |  | Number of words | Standard Trie Build \#operations | BST-based Trie  Build \#operations | Standard Trie space | BST-based Trie space |
-| :---- | :---: | :---: | ----- | ----- | ----- | :---: |
-| **test.txt** | **26** |  | **283** | **643** | **1872** | **216** |
-| **test2.txt** | **69** |  | **759** | **2012** | **4628** | **534** |
-| **tale.txt** | **1002** |  | **9410** | **32705** | **49374** | **5697** |
-| **words\_ alpha.txt** | **370103** |  | **5920416** | **74113215** | **26723034** | **3083427** |
+| Input file            |Number of words | Standard Trie Build \#operations | BST-based Trie  Build \#operations | Standard Trie space | BST-based Trie space |
+|:----------------------|:--------------:|----------------------------------|------------------------------------|---------------------|:--------------------:|
+| **test.txt**          |     **26**     | **283**                          | **643**                            | **1872**            |       **216**        |
+| **test2.txt**         |     **69**     | **759**                          | **2012**                           | **4628**            |       **534**        |
+| **tale.txt**          |    **1002**    | **9410**                         | **32705**                          | **49374**           |       **5697**       |
+| **words\_ alpha.txt** |   **370103**   | **5920416**                      | **74113215**                       | **26723034**        |     **3083427**      |
 
 **Reflection 1**: Explain why the two Tries require different amount of time to be built, and use different amounts of space. Were the observed results consistent with the theoretical expectations?
 
@@ -24,22 +24,22 @@ For the files tale.txt and words-alpha.txt, fill the table for specific queries.
 3. low-branching query (a prefix with only a few possible continuations and a small auto-complete subtree)  
 4. complete-word prefix (a complete word in the Trie that is also a prefix of one or more longer words).
 
-| Query in file tale.txt | Number of results | \#operations Standard search  | \#operations BST-based search  | \#operations Standard auto-complete  | \#operations BST-based auto-complete  |
-| :---- | ----- | ----- | ----- | ----- | ----- |
-| re | **10** | **2** | **20** | **1757** | **277** |
-| fr | **3** | **2** | **13** | **353** | **62** |
-| No-match query (z) | **0** | **1** | **12** | **1** | **12** |
-| High-branching query (s) | **48** | **1** | **14** | **5995** | **899** |
-| Low-branching query (ba) | **2** | **2** | **9** | **218** | **38** |
-| Complete-word prefix (ever) | **3** | **4** | **17** | **193** | **42** |
-|   |  |  |  |  |  |
-|  **Query** in file words-alpha.txt | **Number of results** | **\#operations Standard search**  | **\#operations BST-based search**  | **\#operations Standard auto-complete**  | **\#operations BST-based auto-complete**  |
-| abac | **24** | **4** | **13** | **1381** | **214** |
-| miser | **25** | **5** | **151** | **1652** | **392** |
-| No-match query (zz) | **0** | **2** | **49** | **2** | **49** |
-| High-branching query (s) | **38764** | **1** | **60** | **2838970** | **420645** |
-| Low-branching query (xyr) | **6** | **3** | **98** | **570** | **179** |
-| Complete-word prefix (please) | **9** | **6** | **106** | **438** | **167** |
+| Query in file tale.txt            | Number of results     | \#operations Standard search     | \#operations BST-based search     | \#operations Standard auto-complete     | \#operations BST-based auto-complete     |
+|:----------------------------------|-----------------------|----------------------------------|-----------------------------------|-----------------------------------------|------------------------------------------|
+| re                                | **10**                | **2**                            | **20**                            | **1757**                                | **277**                                  |
+| fr                                | **3**                 | **2**                            | **13**                            | **353**                                 | **62**                                   |
+| No-match query (z)                | **0**                 | **1**                            | **12**                            | **1**                                   | **12**                                   |
+| High-branching query (s)          | **48**                | **1**                            | **14**                            | **5995**                                | **899**                                  |
+| Low-branching query (ba)          | **2**                 | **2**                            | **9**                             | **218**                                 | **38**                                   |
+| Complete-word prefix (ever)       | **3**                 | **4**                            | **17**                            | **193**                                 | **42**                                   |
+|                                   |                       |                                  |                                   |                                         |                                          |
+| **Query** in file words-alpha.txt | **Number of results** | **\#operations Standard search** | **\#operations BST-based search** | **\#operations Standard auto-complete** | **\#operations BST-based auto-complete** |
+| abac                              | **24**                | **4**                            | **13**                            | **1381**                                | **214**                                  |
+| miser                             | **25**                | **5**                            | **151**                           | **1652**                                | **392**                                  |
+| No-match query (zz)               | **0**                 | **2**                            | **49**                            | **2**                                   | **49**                                   |
+| High-branching query (s)          | **38764**             | **1**                            | **60**                            | **2838970**                             | **420645**                               |
+| Low-branching query (xyr)         | **6**                 | **3**                            | **98**                            | **570**                                 | **179**                                  |
+| Complete-word prefix (please)     | **9**                 | **6**                            | **106**                           | **438**                                 | **167**                                  |
 
 **Reflection 2**: Both Trie implementations should return exactly the same auto-complete strings for every query. Explain how the characteristics of each query \- such as its length, branching factor, and whether it is itself a complete word \- affected the operation counts and auto-complete performance of the standard Trie and the BST-based Trie. Were the observed results consistent with the theoretical expectations? Did one implementation consistently outperform the other for auto-complete? If not, explain why.
 
@@ -49,12 +49,12 @@ For each query, its characteristics would influence the auto-complete in slightl
 
 This section corresponds to results from **Case 2**. Include a summary of your results in the table below. In support of your answers, include screenshot of the output of your program in the appendix section (at the end of the report).
 
-| Input file |  | Number of strings searched | Standard Trie Build \#operations | Standard Trie  Search-all \#operations | BST-based Trie  Build \#operations   | BST-based Trie  Search-all  \#operations  |
-| :---- | :---: | :---- | ----- | ----- | ----- | ----- |
-| **test.txt** | **26** |  | **283** | **139** | **643** | **372** |
-| **test2.txt** | **69** |  | **759** | **403** | **2012** | **1199** |
-| **tale.txt** | **1002** |  | **9410** | **5612** | **32705** | **20408** |
-| **words\_ alpha.txt** | **370103** |  | **5920416** | **3864798** | **74113215** | **52966212** |
+| Input file            | Number of strings searched | Standard Trie Build \#operations | Standard Trie  Search-all \#operations | BST-based Trie  Build \#operations | BST-based Trie  Search-all  \#operations |
+|:----------------------|:---------------------------|----------------------------------|----------------------------------------|------------------------------------|------------------------------------------|
+| **test.txt**          | **26**                     | **283**                          | **139**                                | **643**                            | **372**                                  |
+| **test2.txt**         | **69**                     | **759**                          | **403**                                | **2012**                           | **1199**                                 |
+| **tale.txt**          | **1002**                   | **9410**                         | **5612**                               | **32705**                          | **20408**                                |
+| **words\_ alpha.txt** | **370103**                 | **5920416**                      | **3864798**                            | **74113215**                       | **52966212**                             |
 
 **Reflection 3**: For the same input file, which out of the standard Trie and the BST-based Trie required more operations to search every string? Explain the difference using the number of characters searched, the number of child comparisons or array lookups.
 
